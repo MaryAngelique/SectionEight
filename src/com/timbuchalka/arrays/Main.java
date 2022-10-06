@@ -9,16 +9,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] myIntArray = new int[10]; // { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }
-//            myIntArray[0] = 45;
-//            myIntArray[1] = 476;
-//            myIntArray[5] = 50;
+        int[] myIntegers = getIntegers(5);
 
-        for (int i = 0; i < 10; i++) {
+        for(int i = 0; i < myIntegers.length; i++) {
 
-            myIntArray[i] = i * 10;
+            System.out.println("Element " + i +", typed value was " + myIntegers[i]);
 
         }
+
+        System.out.println("The average is " + getAverage(myIntegers));
 
     }
 
