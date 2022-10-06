@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Main {
 
+    private static Scanner scanner = new Scanner(System.in);
+
+
     public static void main(String[] args) {
 
         int[] myIntArray = new int[10]; // { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }
@@ -17,10 +20,13 @@ public class Main {
 
         }
 
-        for (int i = 0; i < myIntArray.length; i++) {
+    }
 
-            System.out.println("Element " + i + ", value is");
+    public static void printArray(int[] array) {
 
+        for (int i = 0; i < myIntArray.lenght; i++) {
+
+            System.out.println("Element " + i + "");
         }
 
     }
