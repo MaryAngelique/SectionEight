@@ -22,13 +22,18 @@ public class Main {
 
     }
 
-    public static void printArray(int[] array) {
+    public static int[] getIntegers(int number) {
 
-        for (int i = 0; i < myIntArray.lenght; i++) {
+        System.out.println("Enter " + number + " integer values.\r");
+        int[] values = new int[number];
 
-            System.out.println("Element " + i + "");
+        for(int i=0; i<values.length; i++) {
+
+            values[i] = scanner.nextInt();
+
         }
 
+        return values;
     }
 
 }
