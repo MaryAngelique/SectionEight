@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Challenge {
 
+    private static Scanner scanner = new Scanner(System.in);
+
     // Create a program using arrays that sorts a list of integers in descending order.
     // Descending order is highest value to lowest.
     // In other words if the array had the values in it 106, 26, 81, 5, 15 your program should
