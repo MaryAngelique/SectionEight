@@ -37,4 +37,13 @@ public class Challenge {
         return array;
     }
 
+    public static void printArray(int[] array) {
+
+        for(int i = 0; i < array.length; i++) {
+
+            System.out.println("Element " + i + " contents " + array[i]);
+
+        }
+    }
+
 }
