@@ -47,13 +47,24 @@ public class Challenge {
     }
 
     public static int[] sortIntegers(int[] array) {
-        int[] sortedArray = new int[array.length];
+//        int[] sortedArray = new int[array.length];
+//
+//        for(int i = 0; i < array.length; i++) {
+//
+//            sortedArray[i] = array[i];
+//
+//        }
 
-        for(int i = 0; i < array.length; i++) {
+        int[] sortedArray = Arrays.copyOf(array, array.length);
 
-            sortedArray[i] = array[i];
+        boolean flag = true;
+        int temp;
 
+        while(flag) {
+            flag = false;
         }
+
+        return sortedArray;
 
     }
 
