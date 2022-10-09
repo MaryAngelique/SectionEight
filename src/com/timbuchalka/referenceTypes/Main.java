@@ -9,6 +9,9 @@ public class Main {
         int myIntValue = 10;
         int anotherIntValue = myIntValue;
 
+        System.out.println("myIntValue = " + myIntValue);
+        System.out.println("anotherIntValue = " + anotherIntValue);
+
     }
 
 
