@@ -12,6 +12,11 @@ public class Main {
         System.out.println("myIntValue = " + myIntValue);
         System.out.println("anotherIntValue = " + anotherIntValue);
 
+        anotherIntValue++;
+
+        System.out.println("myIntValue = " + myIntValue);
+        System.out.println("anotherIntValue = " + anotherIntValue);
+
     }
 
 
