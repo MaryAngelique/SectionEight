@@ -23,6 +23,11 @@ public class Main {
         System.out.println("myIntArray= " + Arrays.toString(myIntArray));
         System.out.println("anotherArray= " + Arrays.toString(anotherArray));
 
+        anotherArray[0] = 1;
+
+        System.out.println("after change myIntArray= " + Arrays.toString(myIntArray));
+        System.out.println("after change anotherArray= " + Arrays.toString(anotherArray));
+
     }
 
 
