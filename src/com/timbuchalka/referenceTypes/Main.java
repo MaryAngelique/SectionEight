@@ -17,6 +17,12 @@ public class Main {
         System.out.println("myIntValue = " + myIntValue);
         System.out.println("anotherIntValue = " + anotherIntValue);
 
+        int[] myIntArray = new int[5];
+        int[] anotherArray = myIntArray;
+
+        System.out.println("myIntArray= " + Arrays.toString(myIntArray));
+        System.out.println("anotherArray= " + Arrays.toString(anotherArray));
+
     }
 
 
