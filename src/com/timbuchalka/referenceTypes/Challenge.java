@@ -13,6 +13,11 @@ public class Challenge {
         int count = scanner.nextInt();
         scanner.nextLine();
 
+        int[] returnedArray = readIntegers(count);
+        int returnedMin = findMin(returnedArray);
+
+        System.out.println("min = " + returnedMin);
+
     }
 
     private static int[] readIntegers(int count) {
