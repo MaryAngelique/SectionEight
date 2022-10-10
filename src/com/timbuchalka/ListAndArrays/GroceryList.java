@@ -30,4 +30,12 @@ public class GroceryList {
 
     }
 
+    public void removeGroceryItem(int position) {
+
+        String theItem = groceryList.get(position);
+
+        groceryList.remove(position);
+        
+    }
+
 }
