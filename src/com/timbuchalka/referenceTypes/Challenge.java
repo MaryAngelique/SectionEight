@@ -8,7 +8,10 @@ public class Challenge {
 
     public static void main(String[] args) {
 
+        System.out.println("Enter count:");
 
+        int count = scanner.nextInt();
+        scanner.nextLine();
 
     }
 
