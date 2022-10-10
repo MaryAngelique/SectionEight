@@ -27,5 +27,12 @@ public class Main {
 
     }
 
+    public static void addItem() {
+
+        System.out.print("Please enter the grocery item: ");
+        groceryList.addGroceryItem(scanner.nextLine());
+
+    }
+
 
 }
