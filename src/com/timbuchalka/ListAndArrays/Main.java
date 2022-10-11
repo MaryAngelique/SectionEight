@@ -35,4 +35,19 @@ public class Main {
     }
 
 
+    public static void modifyItem() {
+
+        System.out.print("Enter item number: ");
+
+        int itemNo = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.print("Enter replacement item: ");
+        String newItem = scanner.nextLine();
+
+        groceryList.modifyGroceryItem(itemNo-1, newItem);
+
+    }
+
+
 }
