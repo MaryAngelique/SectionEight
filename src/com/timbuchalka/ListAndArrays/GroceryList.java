@@ -52,6 +52,13 @@ public class GroceryList {
 
     }
 
+    private void removeGroceryItem(int position) {
+
+        groceryList.remove(position);
+
+    }
+
+
     public String findItem(String searchItem) {
 //        boolean exists = groceryList.contains(searchItem);
 
