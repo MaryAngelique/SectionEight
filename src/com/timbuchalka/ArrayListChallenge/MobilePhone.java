@@ -44,6 +44,24 @@ public class MobilePhone {
 
     }
 
+    public boolean removeContact(Contact contact) {
+
+        int foundPosition = findContact(contact);
+
+        if(foundPosition < 0) {
+            System.out.println(contact.getName() +", was not found.");
+
+            return false;
+
+        }
+
+        this.myContacts.remove(foundPosition);
+        System.out.println(contact.getName() + ", was deleted.");
+
+        return true;
+
+    }
+
     private int findContact(Contact contact) {
 
         return this.myContacts.indexOf(contact);
