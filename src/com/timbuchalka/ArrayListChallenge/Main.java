@@ -122,6 +122,33 @@ public class Main {
         }
     }
 
+    private static void removeContact() {
+
+        System.out.println("Enter existing contact name: ");
+
+        String name = scanner.nextLine();
+        Contact existingContactRecord = mobilePhone.queryContact(name);
+
+        if (existingContactRecord == null) {
+
+            System.out.println("Contact not found.");
+            return;
+
+        }
+
+        if(mobilePhone.removeContact(existingContactRecord)) {
+
+            System.out.println("Successfully deleted");
+
+        } else {
+
+            System.out.println("Error deleting contact");
+
+        }
+
+    }
+
+
     private static void queryContact() {
 
         System.out.println("Enter existing contact name: ");
