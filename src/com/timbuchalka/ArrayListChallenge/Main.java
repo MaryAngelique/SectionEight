@@ -34,6 +34,39 @@ public class Main {
             int action = scanner.nextInt();
             scanner.nextLine();
 
+            switch (action) {
+
+                case 0:
+                    System.out.println("\nShutting down...");
+                    quit = true;
+                    break;
+
+                case 1:
+                    mobilePhone.printContacts();
+                    break;
+
+                case 2:
+                    addNewContact();
+                    break;
+
+                case 3:
+                    updateContact();
+                    break;
+
+                case 4:
+                    removeContact();
+                    break;
+
+                case 5:
+                    queryContact();
+                    break;
+
+                case 6:
+                    printActions();
+                    break;
+
+            }
+
         }
     }
 
