@@ -25,4 +25,9 @@ public class MobilePhone {
         return true;
     }
 
+    private int findContact(Contact contact) {
+
+        return this.myContacts.indexOf(contact);
+
+    }
 }
