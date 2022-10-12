@@ -24,16 +24,17 @@ public class Main {
 
         boolean quit = false;
 
-        startPone();
+        startPhone();
         printActions();
 
         while(quit) {
 
-
-
         }
+    }
 
+    private static void startPhone() {
 
+        System.out.println("Starting phone...");
 
     }
 
