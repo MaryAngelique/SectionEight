@@ -22,6 +22,19 @@ public class Main {
         // e.g. no ints, no .get(i) etc
         // MobilePhone should do everything with Contact objects only.
 
+        boolean quit = false;
+
+        startPone();
+        printActions();
+
+        while(quit) {
+
+
+
+        }
+
+
+
     }
 
 }
