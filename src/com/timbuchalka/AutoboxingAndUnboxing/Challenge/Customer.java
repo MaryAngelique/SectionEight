@@ -11,5 +11,8 @@ public class Customer {
         this.name = name;
     }
 
+    public void addTransaction(double amount) {
+        this.transactions.add(amount);
+    }
 
 }
