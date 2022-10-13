@@ -60,7 +60,7 @@ public class Main {
 
         }
 
-        for(int i=0; i<myDoubleValues.size(); i++) {
+        for(int i = 0; i < myDoubleValues.size(); i++) {
 
             double value = myDoubleValues.get(i);
             System.out.println(i + "  --> " + value);
