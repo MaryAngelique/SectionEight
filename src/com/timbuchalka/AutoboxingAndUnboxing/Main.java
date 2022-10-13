@@ -30,6 +30,12 @@ public class Main {
         ArrayList<String> strArrayList = new ArrayList<String>();
         strArrayList.add("Tim");
 
+//        ArrayList<int> intArrayList = new ArrayList<int>();
+        ArrayList<IntClass> intClassArrayList = new ArrayList<IntClass>();
+        intClassArrayList.add(new IntClass(54));
+        Integer integer = new Integer(54);
+        Double doubleValue = new Double(12.25);
+
 
     }
 
