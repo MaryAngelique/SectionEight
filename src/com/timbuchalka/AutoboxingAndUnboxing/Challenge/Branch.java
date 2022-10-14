@@ -10,4 +10,10 @@ public class Branch {
     public Branch(ArrayList<Customer> customers) {
         this.customers = customers;
     }
+
+    public String getName() {
+        return name;
+    }
+
+
 }
