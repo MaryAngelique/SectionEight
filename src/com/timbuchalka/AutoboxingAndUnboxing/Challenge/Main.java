@@ -24,7 +24,7 @@ public class Main {
         // Hint: Transactions
         // Add data validation.
         // e.g. check if exists, or does not exist, etc.
-        // Think about where you are adding the code to perform certain actions
+        // Think about where you are adding the code to perform certain action
 
     }
 
