@@ -26,6 +26,12 @@ public class Main {
         // e.g. check if exists, or does not exist, etc.
         // Think about where you are adding the code to perform certain action
 
+        Bank bank = new Bank("National Australia Bank");
+
+        if(bank.addBranch("Adelaide")) {
+            System.out.println("Adelaide branch created");
+        }
+
     }
 
 }
