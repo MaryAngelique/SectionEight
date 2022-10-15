@@ -72,7 +72,7 @@ public class Bank {
 
             System.out.println("Customer details for branch " + branch.getName());
 
-            ArrayList<Customer> branchCustomers = branch.getCustomers();
+            String branchCustomers = branch.getCustomers();
 
             for(int i = 0; i < branchCustomers.size(); i++) {
 
