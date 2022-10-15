@@ -9,4 +9,13 @@ public class Customer {
         this.name = name;
         this.balance = balance;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
 }
