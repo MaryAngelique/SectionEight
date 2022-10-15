@@ -7,7 +7,7 @@ public class Branch {
     private String name;
     private ArrayList<Customer> customers;
 
-    public Branch(ArrayList<Customer> customers) {
+    public Branch(String customers) {
         this.customers = customers;
     }
 
