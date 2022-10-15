@@ -48,6 +48,24 @@ public class Main {
 
         bank.addBranch("Melbourne");
 
+        if(!bank.addCustomer("Melbourne", "Brian", 5.53)) {
+            System.out.println("Error Melbourne branch does not exist");
+        }
+
+
+        if(!bank.addBranch("Adelaide")) {
+            System.out.println("Adelaide branch already exists");
+        }
+
+        if(!bank.addCustomerTransaction("Adelaide", "Fergus", 52.33)) {
+            System.out.println("Customer does not exist at branch");
+        }
+
+        if(!bank.addCustomer("Adelaide", "Tim", 12.21)) {
+            System.out.println("Customer Tim already exists");
+        }
+
+
     }
 
 }
