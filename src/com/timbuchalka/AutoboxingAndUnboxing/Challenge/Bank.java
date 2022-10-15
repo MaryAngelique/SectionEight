@@ -7,4 +7,7 @@ public class Bank {
     private String name;
     private ArrayList<Branch> branches;
 
+    public Bank(String name) {
+        this.name = name;
+    }
 }
