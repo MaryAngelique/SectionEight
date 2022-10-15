@@ -1,11 +1,9 @@
 package com.timbuchalka.AutoboxingAndUnboxing.Challenge;
 
-import java.util.ArrayList;
-
 public class Branch {
 
     private String name;
-    private ArrayList<Customer> customers;
+    private String customers;
 
     public Branch(String customers) {
         this.customers = customers;
@@ -13,6 +11,10 @@ public class Branch {
 
     public String getName() {
         return name;
+    }
+
+    public String getCustomers() {
+        return customers;
     }
 
     public boolean newCustomer(String customerName, double initialAmount) {
