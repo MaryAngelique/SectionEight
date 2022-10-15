@@ -10,4 +10,17 @@ public class Bank {
     public Bank(String name) {
         this.name = name;
     }
+
+    public boolean addBranch(String branchName) {
+
+        if(findBranch(branchName) == null) {
+
+            this.branches.add(new Branch(branchName));
+            return true;
+
+        }
+
+        return false;
+    }
+
 }
