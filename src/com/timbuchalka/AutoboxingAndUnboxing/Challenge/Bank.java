@@ -35,5 +35,17 @@ public class Bank {
 
         return false;
     }
+    public boolean addCustomerTransaction(String branchName, String customerName, double amount) {
+
+        Branch branch = findBranch(branchName);
+
+        if(branch != null) {
+
+            return branch.addCustomerTransaction(customerName, amount);
+
+        }
+
+        return false;
+    }
 
 }
