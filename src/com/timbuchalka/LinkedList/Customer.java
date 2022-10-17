@@ -22,5 +22,7 @@ public class Customer {
         return balance;
     }
 
-
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
 }
