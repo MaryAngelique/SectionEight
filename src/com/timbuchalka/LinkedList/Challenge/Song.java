@@ -9,4 +9,14 @@ public class Song {
         this.title = title;
         this.duration = duration;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    @Override
+    public String toString() {
+        return this.title + ": " + this.duration;
+    }
+
 }
