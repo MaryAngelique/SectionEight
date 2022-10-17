@@ -26,4 +26,18 @@ public class Demo {
 
     }
 
+    private static void printList(LinkedList<String> linkedList) {
+
+        Iterator<String> i= linkedList.iterator();
+
+        while(i.hasNext()) {
+
+            System.out.println("Now visiting " + i.next());
+
+        }
+
+        System.out.println("=========================");
+
+    }
+
 }
