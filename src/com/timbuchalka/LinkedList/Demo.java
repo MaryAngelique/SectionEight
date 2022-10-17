@@ -16,6 +16,14 @@ public class Demo {
         placesToVisit.add("Adelaide");
         placesToVisit.add("Darwin");
 
+        printList(placesToVisit);
+
+        placesToVisit.add(1, "Alice Springs");
+        printList(placesToVisit);
+
+        placesToVisit.remove(4);
+        printList(placesToVisit);
+
     }
 
 }
