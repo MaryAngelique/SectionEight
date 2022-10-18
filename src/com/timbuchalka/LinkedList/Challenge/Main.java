@@ -2,6 +2,8 @@ package com.timbuchalka.LinkedList.Challenge;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.ListIterator;
+import java.util.Scanner;
 
 public class Main {
 
@@ -62,5 +64,25 @@ public class Main {
         play(playList);
 
     }
+
+    private static void play(LinkedList<Song> playList) {
+
+    }
+        Scanner scanner = new Scanner(System.in);
+        boolean quit = false;
+        boolean forward = true;
+        ListIterator<Song> listIterator = playList.listIterator();
+
+        if(playList.size() == 0) {
+
+            System.out.println("No songs in playlist");
+            return;
+
+        } else {
+
+            System.out.println("Now playing " + listIterator.next().toString());
+
+        }
+
 
 }
