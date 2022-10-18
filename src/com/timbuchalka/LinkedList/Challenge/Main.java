@@ -1,6 +1,11 @@
 package com.timbuchalka.LinkedList.Challenge;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 public class Main {
+
+    private static ArrayList<Album> albums = new ArrayList<Album>();
 
     public static void main(String[] args) {
 
@@ -43,6 +48,18 @@ public class Main {
         album.addSong("Breaking the rules", 5.32);
         album.addSong("Night of the long knives", 5.12);
         albums.add(album);
+
+        LinkedList<Song> playList = new LinkedList<Song>();
+        albums.get(0).addToPlayList("You can't do it right", playList);
+        albums.get(0).addToPlayList("Holy man", playList);
+        albums.get(0).addToPlayList("Speed king", playList);  // Does not exist
+        albums.get(0).addToPlayList(9, playList);
+        albums.get(1).addToPlayList(8, playList);
+        albums.get(1).addToPlayList(3, playList);
+        albums.get(1).addToPlayList(2, playList);
+        albums.get(1).addToPlayList(24, playList);  // There is no track 24
+
+        play(playList);
 
     }
 
