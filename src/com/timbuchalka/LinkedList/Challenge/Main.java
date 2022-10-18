@@ -67,13 +67,12 @@ public class Main {
 
     private static void play(LinkedList<Song> playList) {
 
-    }
         Scanner scanner = new Scanner(System.in);
         boolean quit = false;
         boolean forward = true;
         ListIterator<Song> listIterator = playList.listIterator();
 
-        if(playList.size() == 0) {
+        if (playList.size() == 0) {
 
             System.out.println("No songs in playlist");
             return;
@@ -83,6 +82,7 @@ public class Main {
             System.out.println("Now playing " + listIterator.next().toString());
 
         }
+    }
 
     private static void play(LinkedList<Song> playList) {
 
@@ -179,4 +179,19 @@ public class Main {
             }
         }
     }
+
+    private static void printMenu() {
+
+        System.out.println("Available actions:\npress");
+        System.out.println("0 - to quit\n" +
+                "1 - to play next song\n" +
+                "2 - to play previous song\n" +
+                "3 - to replay the current song\n" +
+                "4 - list songs in the playlist\n" +
+                "5 - print available actions.\n" +
+                "6 - delete current song from playlist");
+
+    }
+
+
 }
