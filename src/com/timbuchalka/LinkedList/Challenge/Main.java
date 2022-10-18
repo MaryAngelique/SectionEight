@@ -1,9 +1,6 @@
 package com.timbuchalka.LinkedList.Challenge;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.ListIterator;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
@@ -176,6 +173,23 @@ public class Main {
 //                    printMenu();
                     break;
 
+                case 6:
+                    if(playList.size() >0) {
+
+                        listIterator.remove();
+
+                        if(listIterator.hasNext()) {
+
+                            System.out.println("Now playing " + listIterator.next());
+
+                        } else if(listIterator.hasPrevious()) {
+
+                            System.out.println("Now playing " + listIterator.previous());
+
+                        }
+                    }
+
+                    break;
             }
         }
     }
